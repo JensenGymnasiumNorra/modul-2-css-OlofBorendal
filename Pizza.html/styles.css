@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Fontval. line-height, bakgrundsfärg, uppgift 3 */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: white;
+}
+
+header{
+    background-color: red;
+    color:white;
+    text-align:center;
+    padding:2rem;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h1.welcome{
+    color:red;
+    font-size: 2rem;
+    text-align:center;
+}
+
+p.welcome{
+    font-size: 1.2rem;
+    text-align:center
+}
+
+nav{
+    background-color: black;
+    text-align:left;
+    padding:1rem;
+    /*gör navbaren sticky */
+    position:sticky;
+    top:0;
+    /* Test med positionering, uppgift 5 
+    float: right;
+    */
+}
+
+
+nav a{
+    color:white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+/* Extrauppgift, hover */
+nav a:hover{
+    background-color: red;
+    color:white;
+    border-radius:5px;
+}
+
+section{
+    margin-bottom: 2rem;
+    padding:2rem;
+}
+
+li{
+    list-style-type: none;
+    padding:0
+}
+
+footer{
+    background-color:black;
+    color:white;
+    padding:1.5rem;
+    text-align:center
+}
+
+/* Box-model test, uppgift 4 */
+.red-box{
+    border:15px solid green;
+    background-color:red;
+    margin: 50px;
+    padding:10px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Flex box, uppgift 7 */
+.flex-container{
+    display:flex;
+    align-items: stretch;
+}
+
+.flex-container > div{
+    width:500px;
+    margin:10px;
+    text-align:center;
+    line-height: 2em;
+    font-size: 20px
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: auto,auto,auto;
+    gap:10px;
+    padding:10px;
+}
+
+.grid-container > div{
+    padding:10px;
+    font-size:20px;
+    text-align:center;
+    background-color:lightgray;
+    border:3px solid grey;
+    border-radius:5px;
+}
